@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operador de vendas</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <ul>
+      <li><h1>Speedy Pizzaria</h1></li>
+      <li><h2>Venda de Pizzas</h2></li>
+    </ul>  
+  </header>
+  
+  <section>
+    <form>
+      <h3>Selecione a pizza desejada:</h3>
+      <ul>
+        <li><input type="radio" id="mozzarella" name="pizzas"><label for="mozzarella">Mozzarella</label></li>
+        <li><input type="radio" id="calabresa" name="pizzas"><label for="calabresa">Calabresa</label></li>
+        <li><input type="radio" id="mista" name="pizzas"><label for="mista">Mista</label></li>
+      </ul>
+    </form>
+  </section>
+
+  <section>
+    <button id="vendas">Vendas</button>
+    <button id="estorno">Estorno</button>
+  </section>
+
+  <section id="table">
+    <table>
+      <tr>
+        <th>Sabores</th>
+        <th>Quantidade</th>
+        <th>Valores</th>
+      </tr>
+      <tr>
+        <td>Mozzarella</td>
+        <td id="resultadoMozzarella"></td>
+        <td id="vendasMozzarella"></td>
+      </tr>
+      <tr>
+        <td>Calabresa</td>
+        <td id="resultadoCalabresa"></td>
+        <td id="vendasCalabresa"></td>
+      </tr>
+
+      <tr>
+        <td>Mista</td>
+        <td id="resultadoMista"></td>
+        <td id="vendasMista"></td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <button id="export">Exportar Planilha</button>
+  </section>
+  
+  <script src="assets/js/tableToExcel.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

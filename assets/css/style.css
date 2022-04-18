@@ -1,0 +1,46 @@
+body{
+  margin: auto;
+  width: 60%;
+  background-color: #181818;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(33, 33, 33, 0.98);
+  color: Azure;
+  text-align: center;
+}
+
+header ul li{
+  list-style: none;
+}
+
+section form ul li{
+  list-style: none;
+}
+
+section form ul li label{
+  font-size: 22px;
+  color: azure;
+}
+
+section{
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  color: azure;
+}
+
+section button{
+  margin: 5px;
+  font-size: 20px; 
+}
+
+table, th, td{
+  border: 2px solid slategray;
+  border-collapse: collapse;
+  border-radius: 5px;
+  font-size: medium;
+}
