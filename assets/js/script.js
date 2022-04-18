@@ -38,4 +38,39 @@ function venda(e){
   }
 }
 
+function estorno(e){
+  if(document.getElementById('mozzarella').checked){
+    somaMozzarella = somaMozzarella - 1;
+    vendaMozzarrella = vendaMozzarrella - 25.00
+    if(somaMozzarella < 0){
+      somaMozzarella = 0;
+      vendaMozzarrella = 0.00;
+    }
+    document.getElementById('resultadoMozzarella').innerHTML = somaMozzarella;
+    document.getElementById('vendasMozzarella').innerHTML = vendaMozzarrella.toFixed(2);
+  }else if(document.getElementById('calabresa').checked){
+    somaCalabresa = somaCalabresa - 1;
+    vendaCalabresa = vendaCalabresa - 25.00
+    if(somaCalabresa < 0){
+      somaCalabresa = 0;
+      vendaCalabresa = 0.00;
+    }
+    document.getElementById('resultadoCalabresa').innerHTML = somaCalabresa;
+    document.getElementById('vendasCalabresa').innerHTML = vendaCalabresa.toFixed(2);
+  }else if(document.getElementById('mista').checked){
+    somaMista = somaMista - 1;
+    vendaMista = vendaMista - 12.5
+    if(somaMista < 0){
+      somaMista = 0;
+      vendaMista = 0.00;
+    }
+    document.getElementById('resultadoMista').innerHTML = somaMista;
+    document.getElementById('vendasMista').innerHTML = vendaMista.toFixed(2);
+  }
+}
+
+function exportar(e){
+  TableToExcel.convert(document.getElementById('table'));
+}
+
 
